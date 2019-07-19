@@ -119,7 +119,24 @@
                     <view key="view" contentMode="scaleToFill" id="Pna-KO-Fi1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-0d-13v">
+                                <rect key="frame" x="9" y="240" width="339" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="Y9X-r6-P6O"/>
+                                    <constraint firstAttribute="height" constant="21" id="fMy-Vm-bNu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="g9J-LS-Jv5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fCX-0d-13v" firstAttribute="top" secondItem="c08-6v-hfL" secondAttribute="top" constant="176" id="GIY-83-NHb"/>
+                            <constraint firstItem="fCX-0d-13v" firstAttribute="leading" secondItem="c08-6v-hfL" secondAttribute="leading" constant="9" id="Qfn-pz-v3f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c08-6v-hfL"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hlh-18-v9s">
@@ -136,13 +153,13 @@
         <!--Message View Controller-->
         <scene sceneID="VZC-f2-uet">
             <objects>
-                <viewController storyboardIdentifier="MessageViewController" id="Y9H-hX-1wr" customClass="MessageViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y9H-hX-1wr" customClass="MessageViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F2V-2u-eMs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message view controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opa-Wx-UtM">
-                                <rect key="frame" x="8" y="20" width="339" height="21"/>
+                                <rect key="frame" x="8" y="100" width="339" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="339" id="FEA-Df-Nid"/>
                                     <constraint firstAttribute="height" constant="21" id="RB8-T0-H1w"/>
@@ -155,15 +172,58 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Opa-Wx-UtM" firstAttribute="top" secondItem="3Qv-Tf-lNt" secondAttribute="top" id="dvJ-Ut-oJy"/>
+                            <constraint firstItem="Opa-Wx-UtM" firstAttribute="top" secondItem="3Qv-Tf-lNt" secondAttribute="top" constant="80" id="dvJ-Ut-oJy"/>
                             <constraint firstItem="Opa-Wx-UtM" firstAttribute="leading" secondItem="3Qv-Tf-lNt" secondAttribute="leading" constant="8" id="jXs-Ie-7bl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Qv-Tf-lNt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yTQ-dm-k91">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="6c3-WL-XSy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menu" destination="6c3-WL-XSy" id="KdU-z4-ydL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdP-cc-KNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="337.78110944527737"/>
+        </scene>
+        <!--Map Tapped View Controller-->
+        <scene sceneID="czg-ng-J6f">
+            <objects>
+                <viewController storyboardIdentifier="MapTappedViewController" id="esJ-Xi-jyQ" customClass="MapTappedViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hed-aC-xoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrt-Db-OaQ">
+                                <rect key="frame" x="76" y="277.5" width="223" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="0LP-ea-ckF"/>
+                                    <constraint firstAttribute="height" constant="112" id="3UL-tv-eIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hrt-Db-OaQ" firstAttribute="centerX" secondItem="Hed-aC-xoS" secondAttribute="centerX" id="5sa-QY-hkP"/>
+                            <constraint firstItem="Hrt-Db-OaQ" firstAttribute="centerY" secondItem="Hed-aC-xoS" secondAttribute="centerY" id="ckQ-Pz-OCX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJu-eE-IO1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nQm-R0-TMX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="fuW-ss-ft2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menu" destination="fuW-ss-ft2" id="keH-VF-Ubo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPr-q8-Eea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="-388.15592203898052"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FqD-b1-MN7">

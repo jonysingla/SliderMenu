@@ -7,13 +7,17 @@
 //
 
 import UIKit
+class MapTappedViewController: UIViewController,UINavigationBarDelegate,UINavigationControllerDelegate {
 
-class MapTappedViewController: UIViewController {
-
+    @IBOutlet weak var menu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        revealViewController().rearViewRevealWidth = 200
+        menu.target = revealViewController()
+        menu.action = #selector(SWRevealViewController.revealToggle(_:))
     }
     
 

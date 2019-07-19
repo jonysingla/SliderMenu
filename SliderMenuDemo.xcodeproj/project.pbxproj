@@ -16,6 +16,7 @@
 		F0CF193922E1D34A0072E9F5 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CF193822E1D34A0072E9F5 /* menuViewController.swift */; };
 		F0CF193B22E1D3610072E9F5 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CF193A22E1D3610072E9F5 /* MenuCell.swift */; };
 		F0CF193D22E1D36F0072E9F5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CF193C22E1D36F0072E9F5 /* MessageViewController.swift */; };
+		F0CF193F22E1EA220072E9F5 /* MapTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CF193E22E1EA220072E9F5 /* MapTappedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F0CF193822E1D34A0072E9F5 /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		F0CF193A22E1D3610072E9F5 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		F0CF193C22E1D36F0072E9F5 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		F0CF193E22E1EA220072E9F5 /* MapTappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTappedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		F0CF192022E1D1890072E9F5 /* SliderMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F0CF193E22E1EA220072E9F5 /* MapTappedViewController.swift */,
 				F0CF193C22E1D36F0072E9F5 /* MessageViewController.swift */,
 				F0CF193822E1D34A0072E9F5 /* menuViewController.swift */,
 				F0CF193A22E1D3610072E9F5 /* MenuCell.swift */,
@@ -166,6 +169,7 @@
 				F0CF193722E1D2EF0072E9F5 /* SWRevealViewController.m in Sources */,
 				F0CF193D22E1D36F0072E9F5 /* MessageViewController.swift in Sources */,
 				F0CF193922E1D34A0072E9F5 /* menuViewController.swift in Sources */,
+				F0CF193F22E1EA220072E9F5 /* MapTappedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
