@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Order View Controller-->
+        <scene sceneID="VZC-f2-uet">
+            <objects>
+                <viewController storyboardIdentifier="MyOrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y9H-hX-1wr" customClass="MyOrderViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2V-2u-eMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Xb-iR-Upe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y9H-hX-1wr" id="yYR-2o-bT6"/>
+                                    <outlet property="delegate" destination="Y9H-hX-1wr" id="8Ie-vb-aNz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Xb-iR-Upe" firstAttribute="leading" secondItem="3Qv-Tf-lNt" secondAttribute="leading" id="6P1-B2-G12"/>
+                            <constraint firstAttribute="trailing" secondItem="7Xb-iR-Upe" secondAttribute="trailing" id="8Ss-tm-vyh"/>
+                            <constraint firstItem="7Xb-iR-Upe" firstAttribute="top" secondItem="F2V-2u-eMs" secondAttribute="top" id="CyD-b1-Hqk"/>
+                            <constraint firstItem="7Xb-iR-Upe" firstAttribute="bottom" secondItem="3Qv-Tf-lNt" secondAttribute="bottom" id="y85-Ol-UJC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Qv-Tf-lNt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yTQ-dm-k91">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="6c3-WL-XSy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menu" destination="6c3-WL-XSy" id="KdU-z4-ydL"/>
+                        <outlet property="tableView" destination="7Xb-iR-Upe" id="h7c-Zc-wHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdP-cc-KNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="304.4977511244378"/>
+        </scene>
+        <!--My Order Detail View Controller-->
+        <scene sceneID="juA-r0-Y6H">
+            <objects>
+                <viewController storyboardIdentifier="MyOrderDetailViewController" id="gK6-hK-ZX6" customClass="MyOrderDetailViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CPb-1u-qFq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B5g-c1-aKX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhG-OH-Bcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="295"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="32" height="32"/>
+    </resources>
+</document>

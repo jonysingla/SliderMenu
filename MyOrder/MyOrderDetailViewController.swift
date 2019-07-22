@@ -1,23 +1,19 @@
 //
-//  MapTappedViewController.swift
+//  MyOrderDetailViewController.swift
 //  SliderMenuDemo
 //
-//  Created by Jony on 19/07/19.
+//  Created by Jony on 22/07/19.
 //  Copyright © 2019 Jony. All rights reserved.
 //
 
 import UIKit
-class MapTappedViewController: UIViewController,UINavigationBarDelegate,UINavigationControllerDelegate {
 
-    @IBOutlet weak var menu: UIBarButtonItem!
+class MyOrderDetailViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        revealViewController().rearViewRevealWidth = 200
-        menu.target = revealViewController()
-        menu.action = #selector(SWRevealViewController.revealToggle(_:))
     }
     
 

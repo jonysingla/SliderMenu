@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="0SZ-ex-wk8">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="cDI-55-hvQ" customClass="HomeViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pna-KO-Fi1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cNK-8N-efo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cDI-55-hvQ" id="PTw-bV-JaN"/>
+                                    <outlet property="delegate" destination="cDI-55-hvQ" id="6fC-DK-nMb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cNK-8N-efo" firstAttribute="bottom" secondItem="c08-6v-hfL" secondAttribute="bottom" id="QkF-aT-Up2"/>
+                            <constraint firstItem="cNK-8N-efo" firstAttribute="leading" secondItem="c08-6v-hfL" secondAttribute="leading" id="W3q-h5-caQ"/>
+                            <constraint firstItem="cNK-8N-efo" firstAttribute="top" secondItem="Pna-KO-Fi1" secondAttribute="top" id="cBt-rx-TK6"/>
+                            <constraint firstItem="cNK-8N-efo" firstAttribute="trailing" secondItem="c08-6v-hfL" secondAttribute="trailing" id="fFT-ka-fSL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c08-6v-hfL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hlh-18-v9s">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="xCx-1f-NTD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnMenuButton" destination="xCx-1f-NTD" id="GZw-U4-Lq7"/>
+                        <outlet property="tableView" destination="cNK-8N-efo" id="VET-IH-rEY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUd-RP-QxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415.19999999999999" y="-461.01949025487261"/>
+        </scene>
+        <!--Add Order View Controller-->
+        <scene sceneID="Hv8-lR-SYo">
+            <objects>
+                <viewController storyboardIdentifier="AddOrderViewController" id="4RR-0s-Y5I" customClass="AddOrderViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYT-V1-kEi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nMC-gd-zrU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4RR-0s-Y5I" id="gLA-u8-3gl"/>
+                                    <outlet property="delegate" destination="4RR-0s-Y5I" id="GR0-ao-BKX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nMC-gd-zrU" firstAttribute="leading" secondItem="nIU-dG-XPf" secondAttribute="leading" id="K56-1U-JLJ"/>
+                            <constraint firstItem="nMC-gd-zrU" firstAttribute="bottom" secondItem="nIU-dG-XPf" secondAttribute="bottom" id="WtK-Sd-5yi"/>
+                            <constraint firstItem="nMC-gd-zrU" firstAttribute="top" secondItem="FYT-V1-kEi" secondAttribute="top" id="j2x-cR-77b"/>
+                            <constraint firstItem="nMC-gd-zrU" firstAttribute="trailing" secondItem="nIU-dG-XPf" secondAttribute="trailing" id="qdR-r3-CDJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nIU-dG-XPf"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nMC-gd-zrU" id="3VN-JS-0wl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLA-0W-57z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="-461"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="a69-Pn-QLF">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" id="7ip-Sn-CkT" customClass="PaymentViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9T2-gv-PdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="smx-0w-7AA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6s2-69-e3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="-461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="32" height="32"/>
+    </resources>
+</document>
